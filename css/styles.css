@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Quandeasy;
+    src: url(../fonts/Qundeasy-Only-For-Personal-Use.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 30px;
+
+    background: rgba(209, 211, 213, 0.47);
+    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.331);
+}
+
+body{
+    background-color: beige;
+    font-family: 'Quandeasy';
+    font-weight: 700;
+    font-size: 25px;
+
+    padding: 20px;
+}
+
+.image, .header, .my__description{
+    text-align: center;
+
+}
+.image-thumb{
+    border-radius: 30px;
+    border: 1px solid black;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.414);
+}
+
+.card__1, .card__2, .card__3, .card__4{
+    border: 2px solid red;
+    border-radius: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card__1{
+    background: #faebd7;
+}
+.card__1-header{
+    text-align: center;
+}
+.card__1-table{
+    padding-left: 45%;
+}
+
+.card__2{
+    background: #ccbda0;
+    text-align: center;   
+}
+.card__2-table{
+    margin: auto;
+}
+
+.card__3{
+    background: #c1cfac;
+    text-align: center;
+}
+
+.card__4{
+    text-align: center;
+    background: rgb(193, 217, 225);
+}
