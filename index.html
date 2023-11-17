@@ -6,19 +6,32 @@
     <meta name="keywords" content="site, my site, html, css">
     <meta name="description" content="Мой первый сайт">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
     <title>My new site</title>
 </head>
 <body>
 
     <div class="container">
 
-        <div class="image">
-            <img src="img/myphoto.jpg" alt="Мое фото" width="150px" class="image-thumb">
+    
+        <div class="box__head">
+
+            <div class="image">
+                <img src="img/myphoto.jpg" alt="Мое фото" width="200px" class="image-thumb">
+            </div>
+
+            <div class="box__text">
+                <h1 class="header">Александр Савченко</h1>
+                <p class="my__description"><strong>Я программист среднего уровня</strong>. Я очень люблю заниматься <em>своим делом и у меня это отлично получается</em></p> 
+                
+                <h3>Список социальных сетей</h3>
+                <p>
+                    <a href="#!">VK</a> | <a href="#!">Telegram</a>
+                </p>   
+            </div>
+ 
         </div>
-    
-        <h1 class="header">Александр Савченко</h1>
-        <p class="my__description"><strong>Я программист среднего уровня</strong>. Я очень люблю заниматься <em>своим делом и у меня это отлично получается</em></p>
-    
+        
         <div class="card__1">
             <h3 class="card__1-header">Мои хобби</h3>
             <ol class="card__1-table">
@@ -61,38 +74,32 @@
     
         <hr>
     
-        <div class="card__3">
-            <h3>Список социальных сетей</h3>
-            <p>
-                <a href="#!">VK</a> | <a href="#!">Telegram</a>
-            </p>    
-        </div>
-        
-        <hr>
-    
         <div class="card__4">
             <h3>Связаться со мной</h3>
             <form action="">
-                <div>
-                    <label for="your_name">Ваше имя</label>
-                    <input type="text" id="your_name" placeholder="Введите имя">
+                <div class="textboxing">
+                    <div class="textbox">
+                        <label for="your_name">Ваше имя</label>
+                        <br>
+                        <input type="text" id="your_name" placeholder="Введите имя">
+                    </div>
+            
+                    <div class="textbox">
+                        <label for="your_email">Ваш email</label>
+                        <br>
+                        <input type="email" id="your_email" placeholder="Введите email">
+                    </div>
                 </div>
-        
-                <div>
-                    <label for="your_email">Ваш email</label>
-                    <input type="email" id="your_email" placeholder="Введите email">
-                </div>
-        
-                <div>
+                
+                <div class="textbox__message">
                     <label for="your_message">Ваше сообщение:</label>
                     <br>
-                    <textarea name="message" id="your_message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+                    <textarea name="message" id="your_message" cols="100" rows="5" placeholder="Введите сообщение..."></textarea>
                 </div>
-        
-                <div>
-                    <button type="submit">Отправить сообщение!</button>
-                    <br>
-                    <button type="reset">Стереть всё!</button>
+
+                <div class="buttons">
+                    <button type="submit" class="btn">Отправить сообщение!</button>
+                    <button type="reset" class="btn">Стереть всё!</button>
                 </div>
             </form>
         </div>

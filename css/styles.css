@@ -24,13 +24,17 @@ body{
     font-family: 'Quandeasy';
     font-weight: 700;
     font-size: 25px;
-
+    
     padding: 20px;
 }
 
-.image, .header, .my__description{
-    text-align: center;
-
+.box__head{
+    display: flex;
+}
+.image, .box__text{
+    display: inline-block;
+    margin: 20px;
+    line-height: 20px;
 }
 .image-thumb{
     border-radius: 30px;
@@ -45,6 +49,8 @@ body{
     margin-bottom: 10px;
 }
 
+/* Card 1 */
+
 .card__1{
     background: #faebd7;
 }
@@ -55,12 +61,29 @@ body{
     padding-left: 45%;
 }
 
+/* Card 2 */
+
 .card__2{
     background: #ccbda0;
     text-align: center;   
 }
 .card__2-table{
     margin: auto;
+    width: 100%;
+    padding-bottom: 2px;
+}
+.card__2-table td{
+    border: 1px solid black;
+    font-weight: 300;
+}
+.card__2-table td:nth-child(1){
+    background-color: bisque;
+}
+.card__2-table td:nth-child(2){
+    background-color: blanchedalmond;
+}
+.card__2-table td:nth-child(3){
+    background-color: rgb(227, 196, 155);
 }
 
 .card__3{
@@ -69,6 +92,67 @@ body{
 }
 
 .card__4{
+    max-width: 900px;
+    background: rgb(193, 217, 225)
+}
+.card__4 h3{
     text-align: center;
-    background: rgb(193, 217, 225);
+}
+.textboxing{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.textbox, .textbox__message{
+    margin: 5px;
+}
+.textbox{
+    display: inline-block;
+}
+.textbox__message{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.buttons{
+    padding-top: 10px;
+}
+
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+}
+a:visited{
+    color: rgb(118, 65, 118);
+}
+
+
+.btn{
+    background-color: white;
+    color: black;
+    margin-bottom: 5px;
+
+    padding: 3px;
+
+    border: 1px solid red;
+    border-radius: 30px;
+
+    box-shadow: 2px 3px 3px black;
+
+    transition: all .3s;
+}
+.btn:hover{
+    background-color: bisque;
+    color: red;
+}
+.btn:active{
+    transform: scale(0.9);
 }
