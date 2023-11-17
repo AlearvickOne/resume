@@ -28,6 +28,16 @@ body{
     padding: 20px;
 }
 
+.card__1, .card__2, .card__3, .card__4{
+    border: 2px solid red;
+    border-radius: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Header style start */
+
 .box__head{
     display: flex;
 }
@@ -42,14 +52,22 @@ body{
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.414);
 }
 
-.card__1, .card__2, .card__3, .card__4{
-    border: 2px solid red;
-    border-radius: 40px;
-    padding: 10px;
-    margin-bottom: 10px;
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+}
+a:visited{
+    color: rgb(118, 65, 118);
 }
 
-/* Card 1 */
+/* Header style end */
+
+/* Hobbie style start */
 
 .card__1{
     background: #faebd7;
@@ -61,7 +79,9 @@ body{
     padding-left: 45%;
 }
 
-/* Card 2 */
+/* Hobbie start end */
+
+/* Work exp style start */
 
 .card__2{
     background: #ccbda0;
@@ -86,10 +106,9 @@ body{
     background-color: rgb(227, 196, 155);
 }
 
-.card__3{
-    background: #c1cfac;
-    text-align: center;
-}
+/* Work exp style end */
+
+/* My message style start */
 
 .card__4{
     max-width: 1500px;
@@ -120,21 +139,6 @@ body{
     padding-top: 10px;
 }
 
-
-a {
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-a:active {
-    color: red;
-}
-a:visited{
-    color: rgb(118, 65, 118);
-}
-
-
 .btn{
     background-color: white;
     color: black;
@@ -156,3 +160,5 @@ a:visited{
 .btn:active{
     transform: scale(0.9);
 }
+
+/* My message style end  */
